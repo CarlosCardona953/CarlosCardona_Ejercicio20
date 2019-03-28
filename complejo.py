@@ -1,6 +1,3 @@
-import numpy as np
-
-
 class Complejo  ():
     
     def __init__(self,r,i):
@@ -8,7 +5,7 @@ class Complejo  ():
         self.complejo = (r + i*1j)
         self.imaginario = self.complejo.imag
         self.real= self.complejo.real
-        self.norma = np.sqrt(self.imaginario**2 + self.real**2 )
+        self.norma = (self.imaginario**2 + self.real**2 )**(1/2)
         
         
     def conjugado(self):
