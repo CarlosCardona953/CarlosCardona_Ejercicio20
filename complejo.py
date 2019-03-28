@@ -19,7 +19,7 @@ class Complejo  ():
         self.norma
     
     def pow(self,n):
-        
-        i= self.imaginario**n
-        r= self.real**n
-        return  (r+i*1j)
+       
+        k=(self.real+self.imaginario*1j)**n
+        k=Complejo(k.real, k.imag)        
+        return k
